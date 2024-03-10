@@ -2,54 +2,48 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f0f0f0; /* Light grey background */
-    font-family: 'Roboto', sans-serif; /* New font applied to entire body */
+    background-color: #F5F5DC; /* Soft cream background */
+    font-family: 'Roboto', sans-serif; /* Updated font */
 }
 
 nav {
+    height: 50vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 20px;
-    background-color: #333; /* Dark grey nav bar */
+    background-color: #FFA07A; /* Lighter shade of orange */
 }
 
 nav a {
     width: 10vw;
     text-align: center;
     text-decoration: none;
-    color: #fff; /* White text in nav bar */
-    transition: color 0.3s ease-in-out; /* Transition effect for hover */
+    color: #8B4513; /* Deep brown text */
+    transition: color 0.5s ease; /* Transition for hover effect */
 }
 
 nav a:hover {
-    color: #e74c3c; /* Red color on hover */
-}
-
-img {
-    width: 30vw;
-    height: 30vh;
+    color: #A0522D; /* Darker shade on hover */
 }
 
 #red-ball {
-    background-color: #e74c3c; /* Softer red ball */
+    background-color: #8B4513; /* Darker brown ball */
     width: 20px;
     height: 20px;
     border-radius: 50%;
     position: absolute;
     left: 5vw;
     top: 0;
-    animation: bounce 2s infinite; /* Bounce animation */
+    animation: bounce 5s infinite linear;
 }
 
-/* Keyframe animation for bouncing effect */
 @keyframes bounce {
-    0%, 100% {
-        top: 0;
-        animation-timing-function: ease-in;
-    }
-    50% {
-        top: 50vh;
-        animation-timing-function: ease-out;
-    }
+    0%, 100% { left: 5vw; }
+    50% { left: 95vw; }
+}
+
+img {
+    width: 30vw;
+    height: 30vh;
 }
