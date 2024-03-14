@@ -29,6 +29,15 @@ nav ul li a {
 
 section {
     padding: 20px 10%;
+    margin-bottom: 2rem; /* Ensure spacing between sections */
+}
+
+.concert-img {
+    width: 100%;
+    max-width: 600px; /* Adjust based on your layout needs */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Center the image and add some margin below */
 }
 
 footer {
@@ -36,6 +45,16 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+
+.red-trim {
+    color: #ff0000; /* Red trim color for text */
+}
+
+/* Example of a border with the red trim color */
+.red-border {
+    border: 2px solid #ff0000;
+    padding: 10px;
 }
 
 @media only screen and (max-width: 400px) {
@@ -46,5 +65,9 @@ footer {
 
     section {
         padding: 20px 5%;
+    }
+
+    .concert-img {
+        max-width: 100%; /* Adjust image max width for smaller screens */
     }
 }
