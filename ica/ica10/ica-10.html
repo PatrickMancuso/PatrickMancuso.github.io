@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICA 10 - Interactive Elements</title>
+<style>
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .box:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<div id="box1" class="box">Click me to change color!</div>
+<div id="box2" class="box">Hover over me!</div>
+
+<script>
+  // Get references to the elements
+  var box1 = document.getElementById('box1');
+  var box2 = document.getElementById('box2');
+
+  // Add event listeners
+  box1.addEventListener('click', function() {
+    box1.style.backgroundColor = '#28a745';
+  });
+
+  box2.addEventListener('mouseover', function() {
+    box2.textContent = 'Hovered!';
+  });
+
+  box2.addEventListener('mouseout', function() {
+    box2.textContent = 'Hover over me!';
+  });
+</script>
+
+</body>
+</html>
